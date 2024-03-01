@@ -128,7 +128,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://gitee.com/lukei7/k18/raw/Luck/%E9%85%92%E5%90%A7.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
